@@ -3,6 +3,7 @@ from calcMihail import calc_mihail
 from rps import rps
 from students_choicer import students_choicer
 from word_searcher import word_searcher
+from zero_cross import zero_cross
 
 
 if __name__ == "__main__":
