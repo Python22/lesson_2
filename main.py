@@ -14,6 +14,7 @@ if __name__ == "__main__":
     print("3. 'Камень, ножницы, бумага' от Дмитрия")
     print("4. 'Крестики-нолики' от Михаила")
     print("5. 'Рандомайзер выбора студентов' от ...")
+    print("6. 'Крестики-нолики' от Максима")
     user_choice = input("Ваш выбор: ")
     match user_choice:
         case "1": calc_pavel()
@@ -21,4 +22,5 @@ if __name__ == "__main__":
         case "3": rps()
         case "4": students_choicer()
         case "5": word_searcher()
+        case "6": zero_cross()    
         case _: print("Неизвестная команда.")
