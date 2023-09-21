@@ -1,62 +1,64 @@
 
-
-def add(x, y):
-    return x + y
-
-# This function subtracts two numbers
-def subtract(x, y):
-    return x - y
-
-# This function multiplies two numbers
-def multiply(x, y):
-    return x * y
-
-# This function divides two numbers
-def divide(x, y):
-    return x / y
-
-def power(x, y):
-    return x ** y
-
-def square_root(x):
-    return x ** 0.5н
+def calc_pavel():
 
 
-print("Выберите операцию.Пожалуйста")
-print("1.Сложить")
-print("2.Вычесть")
-print("3.Умножить")
-print("4.Разделить")
-print("5.Возвести в степень")
-print("6.Найти корень.")
+    def add(x, y):
+        return x + y
 
-while True:
-    # take input from the user
-    choice = input("Enter choice(1/2/3/4/5/6): ")
+    # This function subtracts two numbers
+    def subtract(x, y):
+        return x - y
 
-    # check if choice is one of the four options
-    if choice in ('1', '2', '3', '4', '5', '6'):
-        try:
-            num1 = int(input("Enter first number: "))
-            num2 = int(input("Enter second number: "))
-        except ValueError:
-            print("Invalid input. Please enter a number.")
-            continue
+    # This function multiplies two numbers
+    def multiply(x, y):
+        return x * y
 
-        if choice == '1':
-            print(num1, "+", num2, "=", add(num1, num2))
+    # This function divides two numbers
+    def divide(x, y):
+        return x / y
 
-        elif choice == '2':
-            print(num1, "-", num2, "=", subtract(num1, num2))
+    def power(x, y):
+        return x ** y
 
-        elif choice == '3':
-            print(num1, "*", num2, "=", multiply(num1, num2))
+    def square_root(x):
+        return x ** 0.5
 
-        elif choice == '4':
-            print(num1, "/", num2, "=", divide(num1, num2))
 
-        elif choice == '5':
-            print(num1, "**", num2, "=", power(num1, num2))
+    print("Выберите операцию.Пожалуйста")
+    print("1.Сложить")
+    print("2.Вычесть")
+    print("3.Умножить")
+    print("4.Разделить")
+    print("5.Возвести в степень")
+    print("6.Найти корень.")
 
-        elif choice == '6':
-            print(num1, "**", "0.5", "=", square_root(num1))
+    while True:
+        # take input from the user
+        choice = input("Enter choice(1/2/3/4/5/6): ")
+
+        # check if choice is one of the four options
+        if choice in ('1', '2', '3', '4', '5', '6'):
+            try:
+                num1 = int(input("Enter first number: "))
+                num2 = int(input("Enter second number: "))
+            except ValueError:
+                print("Invalid input. Please enter a number.")
+                continue
+
+            if choice == '1':
+                print(num1, "+", num2, "=", add(num1, num2))
+
+            elif choice == '2':
+                print(num1, "-", num2, "=", subtract(num1, num2))
+
+            elif choice == '3':
+                print(num1, "*", num2, "=", multiply(num1, num2))
+
+            elif choice == '4':
+                print(num1, "/", num2, "=", divide(num1, num2))
+
+            elif choice == '5':
+                print(num1, "**", num2, "=", power(num1, num2))
+
+            elif choice == '6':
+                print(num1, "**", "0.5", "=", square_root(num1))
