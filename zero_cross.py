@@ -18,7 +18,6 @@ def zero_cross():
             n += 2
             pole[n][int(khod[1])] = ch
 
-
     def turn_comp(pole, ch):
         khod_comp = check_field(pole)[1]
         khod_2 = random.choice(khod_comp)
@@ -28,7 +27,6 @@ def zero_cross():
             pole[1][khod_2 - 3] = ch
         else:
             pole[2][khod_2 - 6] = ch
-
 
     def check_field(lok):
         emp_pl_slots = []
@@ -51,7 +49,6 @@ def zero_cross():
         koul.append(emp_pl_slots)
         koul.append(comp_moves)
         return koul
-
 
     def victory(pole, ch):
         code = 0
@@ -77,7 +74,6 @@ def zero_cross():
 
         return code
 
-
     def show_field(field):
         n = 0
         for k in field:
@@ -87,7 +83,6 @@ def zero_cross():
             print(k[0], "|", k[1], "|", k[2], "\n")
             if n == 2:
                 print("----------")
-
 
     def tic_tac_toes():
         field = [[" ", " ", " "], [" ", " ", " "], [" ", " ", " "]]
@@ -142,5 +137,7 @@ def zero_cross():
             else:
                 return 0
 
-
     tic_tac_toes()
+
+
+zero_cross()
